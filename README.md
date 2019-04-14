@@ -7,3 +7,5 @@ Project Overview : In this project I have worked on MNIST datatset containing im
 -> Output_layer : 10 units 
 The activation function used is the "Relu" activation function (in each layer except the output layer). The cost function used is the softmax cross entropy function with logits. The optimizer I have used is the AdamOptimizer with a learning rate of 0.01. 
 The accuracy obtained is around 85-89 %. We can play around with different number of units in the hidden layers , different learning rates , different no of iterations , different cost function , different optimizer , different types of activation function used to get different results (May be worse or may be better accuracy). 
+
+Instead of using all the training data points(all the training images) to calculate the cost , if we make batches of some particular batch_size and then keep updating the parameters after every batch , we achieve better results and an accuracy of about 98% - 99%.    
